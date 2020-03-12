@@ -27,7 +27,7 @@
 
 <body>
     <header class="header">
-        <div class="container-{breakpoint} fixed-top">
+        <div class="container-{breakpoint} fixed-top justify-content-center">
             <nav
                 class="navbar navbar-inverse navbar-static-top navbar-expand-lg navbar-light bg-white justify-content-between">
                 <a class="navbar-brand" href="#">
@@ -39,7 +39,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active text-dark" href="#Inicio">Inicio <span
+                        <a class="nav-item nav-link active text-dark" href="#inicio">Inicio <span
                                 class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link text-dark" href="#quien-soy">¿Quien soy?</a>
                         <a class="nav-item nav-link text-dark" href="#proyectos">Proyectos</a>
@@ -54,28 +54,29 @@
     <br>
 
     <main>
-        <div id="Inicio" class="container" style="padding: 55px;">
+        <div id="inicio" class="container" style="padding: 55px;">
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
-                    <img class="img-thumbnail img-responsive" src="./img/thumbnail_alejandra-con-cabeza.jpg" alt="">
+                    <img class="img-thumbnail img-fluid" style="max-width: 100%; height: auto;"
+                        src="./img/thumbnail_alejandra-con-cabeza.jpg" alt="">
                 </div>
-                <div class="col-md-6 col-md-offset-6 d-flex align-content-center flex-wrap">
+                <div class="col-md-6 col-md-offset-6 align-self-center align-items-center justify-content-justify">
                     <h2 class="titulo1">Desarrolladora de Software Front-End, quien ayudará al éxito de tu negocio.</h2>
                     <p class="texto1">Como desarrolladora de Software Front-End, creo sitios web y aplicaciones a tu
                         medida para que
-                        tú y tu empresa tengan éxito en línea.</p>
+                        tú y tu empresa tengan éxito.</p>
                 </div>
             </div>
         </div>
-    </main>
     <hr>
-    <div id="quien-soy" class="quien" class="container justify-content-justify" style="padding: 100px;">
+    <div id="quien-soy" class="quien" class="container justify-content-justify align-content-center flex-wrap"
+        style="padding: 50px;">
         <br>
         <h2>¿Quién soy?</h2>
-        <p class="texto2"> Una mujer enamorada de la tecnología y con pasión por crear cosas nuevas. Formación con
-            énfasis en habilidades blandas,
-            además de experiencia laboral de más de cuatro años en el área de mercadeo y ventas. Con dominio del
-            lenguaje de marcado HTML, de estilos CSS y Bootstrap. </p>
+        <p class="texto2"> Una mujer enamorada de la tecnología y con pasión por crear y aprender cosas nuevas. Formación
+            con énfasis en habilidades blandas; experiencia laboral con más de cuatro años en el área de mercadeo y ventas;
+            actualmente me encuentro adquiriendo destrezas y habilidades en el lenguaje de marcado HTML, de estilos CSS,
+            Bootstrap y en el lenguaje de programación Java Script y ReactJS. </p>
     </div>
 
     <hr>
@@ -84,9 +85,9 @@
         <h2 id="proyectos" class="titulo2" style="padding: 60px;">Proyectos</h2>
 
     </div>
-    <div class="container-fluid center-block d-flex justify-content-center">
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-4 col-md-offset-4">
+    <div id="cards" class="container-fluid center-block d-flex justify-content-around">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <div class="card" style="width: 18rem;">
                     <img src="./img/WhatsApp Image 2020-03-08 at 5.00.25 PM.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -96,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <div class="card" style="width: 17.5rem; height: 18.5rem;">
                     <img src="./img/WhatsApp Image 2020-03-08 at 5.18.04 PM.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -106,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <div class="card" style="width: 18rem; height: 18.5rem;">
                     <img src="./img//WhatsApp Image 2020-03-08 at 5.25.49 PM.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -125,7 +126,7 @@
         <div class="card" style="width: 65%; padding: 1.2em;">
             <h3 class="subtitles card-tittle text-center">CONTÁCTAME</h3>
             <div class="card-body">
-                <form class="needs-validation" method="get" action="accion.html">
+                <form class="needs-validation">
                     <div class="form-group">
                         <label for="names">Nombre Completo</label>
                         <input required type="text" class="form-control" id="names" placeholder="Nombre...">
@@ -161,17 +162,25 @@
             <div class="footer__sections">
                 <div class="foo">
                     <h3>Medellín-Colombia</h3>
-                    <h2">Alejandra Meneses Carmona</h2>
+                    <h3">Alejandra Meneses Carmona</h3>
+                        <h4>aleja-mc@hotmail.com</h4>
+                        <h5>300 700 62 12</h5>
                 </div>
                 <section>
                     <div class="footer__icons">
-                        <a href="https://www.facebook.com/aleja.menesescarmona.9" target="_blank"><img src="./img/icons8-facebook-50.png" alt=""></a>
-                        <a href="https://www.instagram.com/alejamc15/?hl=es-la" target="_blank"><img src="./img/icons8-instagram-32.png" alt=""></a>
-                        <a href="https://github.com/AlejaMC15" target="_blank"><img src="./img/icons8-github-24.png" alt=""></a>
+                        <a href="https://www.facebook.com/aleja.menesescarmona.9" target="_blank"><img
+                                src="./img/icons8-facebook-50.png" alt=""></a>
+                        <a href="https://www.instagram.com/alejamc15/?hl=es-la" target="_blank"><img
+                                src="./img/icons8-instagram-32.png" alt=""></a>
+                        <a href="https://github.com/AlejaMC15" target="_blank"><img src="./img/icons8-github-24.png"
+                                alt=""></a>
                     </div>
                 </section>
             </div>
         </div>
     </footer>
+</main>
+
 </body>
+
 </html>
