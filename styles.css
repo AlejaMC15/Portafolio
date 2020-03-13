@@ -2,6 +2,9 @@
     .nombre{
         font-size: 100%;
     }
+    #cards{
+       width: 100px; 
+    }
  }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
